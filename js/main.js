@@ -15,12 +15,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 registerServiceWorker = () => {
   if(!navigator.serviceWorker) return;
-  navigator.serviceWorker.register('/js/sw/index.js').then(function() {
-    console.log('Registration Worked!');
-  }).catch(function() {
-    console.log('Registration Failed');
-  });
+  navigator.serviceWorker.register('/js/sw/index.js');
 }
+
 /**
  * Fetch all neighborhoods and set their HTML.
  */
