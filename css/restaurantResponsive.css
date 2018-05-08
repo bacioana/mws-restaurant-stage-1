@@ -1,0 +1,51 @@
+img, embed, object, video {
+	  max-width: 100%;
+}
+
+@media screen and (min-width: 300px) {
+	.inside #map {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		height: 200px;
+	}
+
+	.inside #map-container {
+		width: 100%;
+		background: transparent;		
+		position: relative;
+	}
+
+	#restaurant-container, #reviews-container {
+		width: 75%;		
+	}
+
+	.inside header {		
+		position: relative;
+	}
+
+	#breadcrumb{
+		width: 75%;
+	}
+
+	.inside #footer {
+		position: relative;
+		width: 85%;
+	}
+	body {
+		background-color: #f3f3f3;
+	}
+
+	.inside #map {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	#maincontent {
+		max-width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
