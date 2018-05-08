@@ -4,6 +4,9 @@ self.addEventListener('install', function(event) {
 		caches.open('restaurantReviewStaticV1').then(function(cache) {
 			return cache.addAll([
 				'/',
+				'/index.html',
+				'/restaurant.html',
+				'/data/restaurants.json',
 				'/css/responsive.css',
 				'/css/styles.css',
 				'/css/restaurantResponsive.css',
@@ -19,8 +22,7 @@ self.addEventListener('install', function(event) {
 				'/img/10.jpg',
 				'/js/dbhelper.js',
 				'/js/main.js',
-				'/js/restaurant_info.js',
-				' https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&1m2&1d40.55965355640603&2d-74.17722630138718&2m2&1d40.88229899141979&2d-73.79213336282237&2u12&4sro-RO&5e0&6sm%40421000000&7b0&8e0&callback=_xdc_._cmjpkf&token'
+				'/js/restaurant_info.js'				
 			]);
 		})
 	);
