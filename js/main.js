@@ -4,6 +4,7 @@ let restaurants,
 var map
 var markers = []
 
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -14,12 +15,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 registerServiceWorker = () => {
-  if(!navigator.serviceWorker) return;
-  navigator.serviceWorker.register('/index.js');
-}
-
+    if(!navigator.serviceWorker) return;
+    navigator.serviceWorker.register('/index.js');
+  }
+  
 registerServiceWorker();
-
 /**
  * Fetch all neighborhoods and set their HTML.
  */
